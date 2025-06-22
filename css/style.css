@@ -524,7 +524,10 @@ footer .credit a {
     opacity: 1;
   }
 }
-
+.modal-container .close-icon {
+  position: absolute;
+  right: 1rem;
+}
 .modal-content {
   display: flex;
   flex-wrap: nowrap;

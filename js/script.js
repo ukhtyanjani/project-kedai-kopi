@@ -49,7 +49,12 @@ itemdetailbuttons.forEach((btn) => {
     itemdetailmodal.style.display = "flex";
     e.preventDefault();
   };
-});
+
+// klik tombol close modal
+document.querySelector(".modal .close-icon").onclick = (e) => {
+  itemdetailmodal.style.display = "none";
+  e.preventDefault();
+};
 
 // klik di luar modal
 window.onclick = (e) => {
