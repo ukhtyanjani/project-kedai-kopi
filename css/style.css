@@ -875,7 +875,7 @@ body {
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
 
-/* .hero::after {
+/* .hero:::after {
   content: "";
   display: block;
   position: absolute;
