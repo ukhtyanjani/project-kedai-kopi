@@ -860,7 +860,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("/img/kopicino.jpg");
+  background-image: url("/img/kopisu.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -894,7 +894,7 @@ body {
   position: absolute;
   /* background-color: salmon;  */
   inset: 0;
-  -webkit-mask-image: url("/img/kopicino.jpg");
+  -webkit-mask-image: url("/img/background2.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
   -webkit-mask-position: center;
@@ -907,7 +907,7 @@ body {
   width: 100%;
   text-align: center;
   position: fixed;
-  top: 140px;
+  top: 130px;
 }
 .hero .content h1 {
   font-size: 5em;
@@ -974,7 +974,7 @@ body {
 .about .row .about-img img {
   width: 100%;
   -webkit-mask-image: url("/img/splash\ cantik.svg");
-  -webkit-mask-size: 100%;
+  -webkit-mask-size: 50%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
 }
