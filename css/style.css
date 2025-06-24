@@ -973,7 +973,7 @@ body {
 /* Efek Masking pada Gambar About */
 .about .row .about-img img {
   width: 100%;
-  -webkit-mask-image: url("/img/wetkopi.jpg");
+  -webkit-mask-image: url("/img/splash\ cantik.svg");
   -webkit-mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
