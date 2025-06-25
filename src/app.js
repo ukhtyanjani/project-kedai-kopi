@@ -14,11 +14,11 @@ document.addEventListener("alpine:init", () => {
     total: 0,
     quantity: 0,
     add(newItem) {
-      this, items.push(newItems);
+      this.items.push(newItem); // Perbaikan di sini
       this.quantity++;
       this.total += newItem.price;
-      console.log(this.total);
-      console.log(newItem);
+      console.log("Keranjang sekarang:", this.items);
+      console.log("Total Harga:", this.total);
     },
   });
 });
