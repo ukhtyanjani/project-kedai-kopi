@@ -8,6 +8,19 @@ document.addEventListener("alpine:init", () => {
       { id: 5, name: "Sumatra Mandheling", img: "5.jpg", price: 40000 },
     ],
   }));
+
+  Alpine.store("cart", {
+    items: [],
+    total: 0,
+    quantity: 0,
+    add(newItem) {
+      this, items.push(newItems);
+      this.quantity++;
+      this.total += newItem.price;
+      console.log(this.total);
+      console.log(newItem);
+    },
+  });
 });
 
 // konversi ke Rupiah

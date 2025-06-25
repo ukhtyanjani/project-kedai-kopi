@@ -120,6 +120,16 @@ body {
 }
 
 /* shopping cart */
+#shopping-cart-button {
+  position: relative;
+}
+#shopping-cart-button .quantity-badge {
+  display: inline-block;
+  padding: 1px 5px;
+  background-color: red;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
 .shopping-cart {
   position: absolute;
   top: 100%;
@@ -359,7 +369,7 @@ body {
 }
 .about .row .about-img img {
   width: 100%;
-  -webkit-mask-image: url(/img/coffe\beans\\(1\).svg);
+  -webkit-mask-image: url(/img/splash\ cantik.svg);
   -webkit-mask-size: 80%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
