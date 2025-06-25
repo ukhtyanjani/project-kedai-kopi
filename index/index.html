@@ -182,7 +182,7 @@
               <img :src="`/img/products/${item.img}`" :alt="item.name" />
             </div>
             <div class="product-content">
-              <h3>Coffee Beans 1</h3>
+              <h3 x-text="item.name"></h3>
               <div class="product-stars">
                 <i data-feather="star" class="star-full"></i>
                 <i data-feather="star" class="star-full"></i>
@@ -190,7 +190,7 @@
                 <i data-feather="star" class="star-full"></i>
                 <i data-feather="star" class="star-full"></i>
               </div>
-              <div class="product-price">IDR 45K <span>IDR 55K</span></div>
+              <div class="product-price"><span x-text="item.price"></span></div>
             </div>
           </div>
         </template>
