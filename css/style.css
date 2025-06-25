@@ -129,50 +129,92 @@ body {
   background-color: red;
   border-radius: 6px;
   font-size: 0.8rem;
-}
-.shopping-cart {
   position: absolute;
-  top: 100%;
-  right: -100%;
-  height: 100vh;
-  width: 35rem;
-  padding: 0 1.5rem;
-  background-color: #fff;
-  color: var(--bg);
-  transition: 0.3s;
-}
-.shopping-cart.active {
-  right: 0;
-}
-.shopping-cart .cart-item {
-  margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px dashed #666;
-  position: relative;
-}
-.shopping-cart img {
-  height: 6rem;
-  border-radius: 80%;
-}
-.shopping-cart h3 {
-  font-size: 1.6rem;
-  padding-bottom: 0.5rem;
-}
-.shopping-cart .item-price {
-  font-size: 1.2rem;
-}
-.shopping-cart .remove-item {
-  position: absolute;
-  right: 1rem;
-  cursor: pointer;
-}
-.shopping-cart .remove-item:hover {
-  color: var(--primary);
+  top: 0;
+  right: -10px;
 }
 
+.shopping-cart {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 320px;
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.item-detail {
+  flex: 1;
+}
+
+.item-detail h3 {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.item-price {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-price button {
+  background-color: #b6895b;
+  color: white;
+  border: none;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item-price span {
+  min-width: 20px;
+  text-align: center;
+}
+
+.shopping-cart h4 {
+  font-size: 16px;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.shopping-cart .cart-item #add,
+.shopping-cart .cart-item #remove {
+  display: inline-block;
+  padding: 2px 5px;
+  cursor: pointer;
+  margin: 0 8px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+shopping-cart h4 {
+  font-size: 1.6rem;
+  margin-top: -1rem;
+  text-align: center;
+}
 /* media queries */
 /* laptop */
 @media (max-width: 1366px) {
