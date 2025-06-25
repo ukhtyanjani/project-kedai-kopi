@@ -203,15 +203,67 @@
               <img :src="`/img/products/${item.img}`" :alt="item.name" />
             </div>
             <div class="product-content">
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                stroke="currentColor"
+                troke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <use href="/img/feather-sprite.svg#star" />
+              </svg>
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                stroke="currentColor"
+                troke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <use href="/img/feather-sprite.svg#star" />
+              </svg>
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                stroke="currentColor"
+                troke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <use href="/img/feather-sprite.svg#star" />
+              </svg>
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                stroke="currentColor"
+                troke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <use href="/img/feather-sprite.svg#star" />
+              </svg>
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                stroke="currentColor"
+                troke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <use href="/img/feather-sprite.svg#star" />
+              </svg>
+
               <h3 x-text="item.name"></h3>
-              <div class="product-stars">
-                <i data-feather="star" class="star-full"></i>
-                <i data-feather="star" class="star-full"></i>
-                <i data-feather="star" class="star-full"></i>
-                <i data-feather="star" class="star-full"></i>
-                <i data-feather="star" class="star-full"></i>
+              <div class="product-stars"></div>
+              <div class="product-price">
+                <span x-text="rupiah(item.price)"></span>
               </div>
-              <div class="product-price"><span x-text="item.price"></span></div>
             </div>
           </div>
         </template>
